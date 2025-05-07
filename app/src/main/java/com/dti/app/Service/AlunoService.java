@@ -60,7 +60,8 @@ public class AlunoService {
                 .mapToDouble(Aluno::getMediaNotas)
                 .average();
 
-        if (mediaTurma.isEmpty()) return new ArrayList<>();
+        if (mediaTurma.isEmpty())
+            return new ArrayList<>();
 
         return alunos.stream()
                 .filter(a -> a.getMediaNotas() > mediaTurma.getAsDouble())
@@ -68,8 +69,9 @@ public class AlunoService {
     }
 
     public List<Aluno> alunosComFrequenciaBaixa() {
+        int FREQUENCIA = 75;
         return alunoRepository.findAll().stream()
-                .filter(a -> a.getFrequencia() != null && a.getFrequencia() < 75)
+                .filter(a -> a.getFrequencia() != null && a.getFrequencia() < FREQUENCIA)
                 .collect(Collectors.toList());
     }
 }

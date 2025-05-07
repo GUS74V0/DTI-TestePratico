@@ -11,9 +11,9 @@ import java.util.List;
 @RequestMapping("/alunos")
 public class AlunoController {
 
+    @Autowired
     private final AlunoService alunoService;
 
-    @Autowired
     public AlunoController(AlunoService alunoService) {
         this.alunoService = alunoService;
     }
