@@ -10,10 +10,6 @@ O sistema permite que o professor **Carlos**:
 * Cadastre alunos com notas de 5 disciplinas e frequência (%).
 * Veja a média individual de cada aluno.
 * Visualize a média da turma por disciplina e geral.
-* Filtre alunos com:
-
-  * Média acima da média da turma.
-  * Frequência abaixo de 75%.
 
 ---
 
